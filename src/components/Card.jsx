@@ -107,6 +107,7 @@ export default function Card(props) {
               onClick={handleAddToCart}
             >
               Add To Cart
+              
             </button>
           </div>
         </div>
