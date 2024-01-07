@@ -17,10 +17,10 @@ export default function Navbar() {
   }
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-success">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-black">
         <div className="container-fluid">
           <Link className="navbar-brand fs-1 fst-italic" to="/">
-          Go 4 Food
+          Just Eat
           </Link>
           <button
             className="navbar-toggler"
@@ -72,7 +72,7 @@ export default function Navbar() {
               </div>
             ) : (
               <div>
-                <div className="btn bg-white text-success mx-2"
+                <div className="btn bg-success text-white mx-2"
                 onClick={()=>setCartView(true)}
                 >My Cart
                 {"  "}
@@ -83,7 +83,7 @@ export default function Navbar() {
                 }}>
                   <Cart/>
                 </Modal>:null}
-                <div className="btn bg-white text-danger mx-2"  onClick={handleLogout}>Logout</div>
+                <div className="btn bg-danger text-white mx-2"  onClick={handleLogout}>Logout</div>
               </div>
             )}
           </div>

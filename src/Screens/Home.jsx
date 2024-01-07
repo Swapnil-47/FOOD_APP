@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <div>
-      <div>
+      <div className="">
         <Navbar />
           <div>
             {/* carousel */}
@@ -58,6 +58,7 @@ export default function Home() {
                   aria-label="Search"
                   value={search} onChange={(e)=>{
                     setSearch(e.target.value)
+                    console.log(e.target.value)
                   }}
                 />
                 {/* <button
@@ -95,8 +96,8 @@ export default function Home() {
       </div>
     </div>
       {/* carousel end */}
-          </div>
-          <div className="container">
+          </div >
+          <div className="container ">
             {
               foodCat.length !==0 ? foodCat.map((data)=>{
                 return(

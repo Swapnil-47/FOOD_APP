@@ -70,7 +70,7 @@ export default function MyOrder() {
                                                                     </h5>
                                                                     <div
                                                                         className="container w-100 p-0"
-                                                                        style={{ height: "38px" }}
+                                                                        style={{ height: "auto" }}
                                                                     >
                                                                         <span className="m-1">
                                                                             {arrayData.qty}
