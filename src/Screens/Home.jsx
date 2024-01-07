@@ -2,7 +2,8 @@ import React, {useEffect,useState} from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
-
+import foodData from "../foodData2.json"
+import foodCatJSON from "../foodCategory.json"
 export default function Home() {
   const [search,setSearch] = useState("")
   const [foodCat,setFoodCat] = useState([]);
@@ -13,15 +14,15 @@ export default function Home() {
     opacity: "0.8", // Adjust the opacity as needed (0.0 to 1.0)
   };
   const loadData = async ()=>{
-    let response = await fetch("http://localhost:5000/api/foodData",{
-      method:"POST",
-      headers:{
-        'Content-Type':"application/json"
-      }
-    });
-    response = await response.json();
-    setFoodItem(response[0]);
-    setFoodCat(response[1])
+    // let response = await fetch("http://localhost:5000/api/foodData",{
+    //   method:"GET",
+    //   headers:{
+    //     'Content-Type':"application/json"
+    //   }
+    // });
+    // response = await response.json();
+    setFoodItem(foodData);
+    setFoodCat(foodCatJSON);
     // console.log(response[0],response[1])
   }
   useEffect(()=>{
