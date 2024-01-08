@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="">
+      <div className="bg-black">
         <Navbar />
           <div>
             {/* carousel */}
@@ -65,7 +65,7 @@ export default function Home() {
 </div>
       {/* carousel end */}
           </div >
-          <div className="container ">
+          <div className="container bg-black">
             {
               foodCat.length !==0 ? foodCat.map((data)=>{
                 return(

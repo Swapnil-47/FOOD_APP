@@ -57,7 +57,7 @@ export default function Card(props) {
     <div>
       <div>
         <div
-          className="card mt-3"
+          className="card m-3 "
           style={{ width: "18rem", maxHeight: "360px" }}
         >
           <img
