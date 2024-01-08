@@ -97,7 +97,7 @@ export default function MyOrder() {
                 </div>
             </div>
 
-            <Footer />
+
         </div>
     );
 }
